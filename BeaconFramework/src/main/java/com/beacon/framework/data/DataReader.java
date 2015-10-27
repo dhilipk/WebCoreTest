@@ -4,6 +4,6 @@ import java.lang.reflect.Method;
 
 public interface DataReader {
 	
-	Object [] [] getDataObject(Method method, FileType fileType, String fileName);
+	public abstract <T extends Object> Object [] [] constructDataObject(Method method, String fileName, Class<T> className);
 
 }

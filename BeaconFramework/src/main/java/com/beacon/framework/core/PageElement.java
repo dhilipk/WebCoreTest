@@ -17,9 +17,11 @@ public class PageElement {
 	}
 	
 	public void sendKeys(WebElement element, String value){
-		LOG.debug("Tring to enter value : " + value + " on the web element : " + element.getText() == null ? element.getTagName(): element.getText());
+		LOG.debug("Clearing the existing value : " + element.getText() + " on the web element : " + element.getTagName());
+		element.clear();
+		LOG.debug("Tring to enter value : " + value + " on the web element : " + element.getTagName());
 		element.sendKeys(value);
-		LOG.debug("Value Entered : " + value + " on the web element : " + element.getText());
+		LOG.debug("Value Entered : " + value + " on the web element : " + element.getTagName());
 	}
 	
 	public void click(WebElement element){
