@@ -2,6 +2,7 @@ package com.beacon.framework.core;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,12 +26,22 @@ public class PageElement {
 	}
 	
 	public void click(WebElement element){
-		LOG.debug("Trying to access the web element : " + element.getText());
+		LOG.debug("Trying to click access the web element : " + element.getText());
 		element.click();
 		LOG.debug("Clicked on the web element : " + element.getText());
 	}
 	
-	public void select(WebElement element, String value){
-		
+	public void submit(WebElement element){
+		LOG.debug("Trying to submit access the web element : " + element.getText());
+		element.submit();
+		LOG.debug("Submitted the web element : " + element.getText());
+	}
+	
+	public void selectByValue(WebElement element, String value){
+		LOG.debug("Trying to access the Select Element : " + element.getTagName());
+		Select select = new Select(element);
+		LOG.debug("Select Object Obtained");
+		select.selectByValue(value);
+		LOG.debug("Value Altered for Select Element : " + value);
 	}
 }

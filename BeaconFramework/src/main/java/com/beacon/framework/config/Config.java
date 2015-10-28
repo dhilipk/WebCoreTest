@@ -21,7 +21,8 @@ public enum Config {
 
 	BROWSER("browser"), URL("baseUrl"), SS_DIRECTORY("ssDirectory"), SS_FILETYPE(
 			"ssFileType"), HUB_URL("hubUrl"), EVENT_FIRING_ENABLED("eventFiringEnabled"), FULL_SCREEN("fullscreen"),
-			RUN_MODE("runMode"), MAX_WAIT("maxWait");
+			RUN_MODE("runMode"), MAX_WAIT("maxWait"), CONNECTION_URL("connectionUrl"), DB_USERNAME("dbUserName"), 
+			DB_PASSWORD("dbPassword");
 
 	private static final String BROWSER_NOT_IMPLEMENTED_EXCEPTION = "Given browser in property file is not Implementated";
 	
