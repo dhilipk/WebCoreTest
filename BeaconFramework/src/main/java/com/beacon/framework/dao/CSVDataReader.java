@@ -1,4 +1,4 @@
-package com.beacon.framework.data;
+package com.beacon.framework.dao;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package com.beacon.framework.data;
+package com.beacon.framework.dao;
 
 public enum FileType {
 

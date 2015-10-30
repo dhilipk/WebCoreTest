@@ -1,4 +1,4 @@
-package com.beacon.framework.driver;
+package com.beacon.framework.dao;
 
 import java.sql.Connection;
 
