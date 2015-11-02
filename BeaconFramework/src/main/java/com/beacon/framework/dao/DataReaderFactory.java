@@ -16,7 +16,7 @@ public class DataReaderFactory {
 		if(fileType == FileType.CSV){
 			dataReader = new CSVDataReader();
 		}else if(fileType == FileType.XLS){
-			throw new IllegalArgumentException("Illegal Argument XLS is not implemented");
+			dataReader = new XlsDataReader();
 		}else {
 			throw new IllegalArgumentException("Only CSV is implemented, XLS development is in-progress");
 		}

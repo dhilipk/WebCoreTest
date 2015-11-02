@@ -1,11 +1,15 @@
 package com.beacon.framework.core;
 
-import org.openqa.selenium.support.PageFactory;
 
-import com.beacon.framework.driver.DriverManager;
-
-public abstract class AbstractPage {
+public class AbstractPage implements Page{
 	
-	protected PageElement pageElement = new PageElement();
+	private PageElement pageElement  = new PageElement();
+
+	@Override
+	public PageElement getPageElement() {
+		return pageElement;
+	}
+	
+	
 	
 }
