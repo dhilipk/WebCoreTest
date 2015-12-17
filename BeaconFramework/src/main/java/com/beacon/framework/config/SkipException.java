@@ -4,7 +4,7 @@ public class SkipException extends RuntimeException {
 
 	
 	public SkipException(String message){
-		super(message);
+	  super(message);
 	}
 	
 	public SkipException(String message, Throwable cause){
