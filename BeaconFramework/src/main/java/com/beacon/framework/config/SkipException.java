@@ -2,8 +2,7 @@ package com.beacon.framework.config;
 
 public class SkipException extends RuntimeException {
 
-	
-	public SkipException(String message){
+	public SkipException(String message) {
 	  super(message);
 	}
 	
